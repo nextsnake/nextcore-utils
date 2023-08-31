@@ -1,6 +1,6 @@
 <div align="center">
 
-  # nextcore_utils
+  # nextcore-utils
   <sub>Useful utils for nextcore.</sub>
 
 </div>
