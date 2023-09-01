@@ -7,9 +7,9 @@ if TYPE_CHECKING:
     from discord_typings import ApplicationData
     from nextcore.http import BotAuthentication, HTTPClient
 
-__all__ = ("me",)
+__all__ = ("get_current_application",)
 
-async def me(client: HTTPClient, authentication: BotAuthentication) -> ApplicationData:
+async def get_current_application(client: HTTPClient, authentication: BotAuthentication) -> ApplicationData:
     """
     Parameters
     ----------
