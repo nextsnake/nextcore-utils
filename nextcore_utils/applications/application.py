@@ -11,7 +11,17 @@ __all__ = ("me",)
 
 async def me(client: HTTPClient, authentication: BotAuthentication) -> ApplicationData:
     """
-    Returns the [application](https://discord.com/developers/docs/resources/application#application-object) object associated with the requesting bot user.
+    Parameters
+    ----------
+    client:
+        Your nextcore http client.
+    authentication:
+        Your nextcore bot authentication.
+
+    Returns
+    -------
+    ApplicationData
+        The [application](https://discord.com/developers/docs/resources/application#application-object) object associated with the requesting bot user.
     """
 
     route = Route(
