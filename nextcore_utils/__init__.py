@@ -1,3 +1,7 @@
+"""
+Useful utils for nextcore.
+"""
+
 from __future__ import annotations
 from typing import TYPE_CHECKING
 
