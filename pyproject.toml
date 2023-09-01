@@ -1,0 +1,50 @@
+[project]
+name = "nextcore_utils"
+description = "Useful utils for nextcore."
+authors = [
+    {name = "Goldy", email = "goldy@devgoldy.xyz"},
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+keywords = [
+    "nextcore", "nextcore utils"
+]
+classifiers = [
+	'Operating System :: Microsoft :: Windows :: Windows 11',
+    'Operating System :: Microsoft :: Windows :: Windows 10',
+    'Operating System :: POSIX :: Linux',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+	'Programming Language :: Python :: 3.11'
+]
+dependencies = [
+    "requests",
+    "importlib-metadata; python_version<'3.8'",
+
+    "nextcore[speed]>=2.0.1"
+]
+
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "build"
+]
+
+[project.urls]
+GitHub = "https://github.com/nextsnake/nextcore-utils"
+BugTracker = "https://github.com/nextsnake/nextcore-utils/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "nextcore_utils.__version__" }
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["nextcore_utils"]

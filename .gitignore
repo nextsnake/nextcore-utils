@@ -1,0 +1,6 @@
+.ruff_cache
+__pycache__
+
+dist
+build
+nextcore_utils.egg-info
