@@ -9,6 +9,8 @@ from abc import ABC
 class BaseWrapper(ABC):
     def __init__(self, client: HTTPClient, authentication: BotAuthentication) -> None:
         """
+        The base interface of http wrappers.
+
         Parameters
         ----------
         client:
